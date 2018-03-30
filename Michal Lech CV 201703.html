@@ -391,7 +391,7 @@ function generateTOC() {
 <h1><a name="main-career"></a>Career</h1>
 
 <div class="careerstep">
-	<a name="career-aframe"></a>
+	<a name="career-ctm"></a>
 	<div class="stephdr">
 		<div class="years">
 			Apr 2017 - Jan 2018
@@ -684,7 +684,8 @@ function generateTOC() {
 	You can skip this section by clicking <a href="#projectsend">here</a>.
 </div>
 <div class="minimenu">
-	The&nbsp;Big&nbsp;Smoke |
+	SIT |
+	<a href="#prj-bigsmoke">The&nbsp;Big&nbsp;Smoke</a> |
 	<a href="#prj-aurora">Aurora</a> |
 	<a href="#prj-orion">Orion</a> |
 	<a href="#prj-fabric">Data&nbsp;Fabric</a> |
@@ -693,6 +694,55 @@ function generateTOC() {
 </div>
 
 <div class="careerstep">
+	<a name="prj-ctmsit"></a>
+	<div class="stephdr">
+		<div class="years">
+			Systems Integration Testing
+		</div><div class="position">
+			&nbsp;
+		</div><div>
+			<a href="#career-ctm">Compare The Market</a>
+		</div>
+	</div>
+
+	<div class="description">
+		<p>
+			The fundamental idea here was to perform contract testing without mentioning scary terms like
+			<i>contract testing</i> and exotic new technologies like Pact.js. This meant that the contract tests had
+			to be performed indirectly and implicitly.
+		</p><p>
+			The reason to try and look for such compromise was a project which, besides delivering CtM's "The Last
+			Jedi" campaign, also included almost complete restructuring of Rewards systems, including partial
+			implementation of microservices.
+		</p><p>
+			The requirement for contract testing without contract testing tools was delivered by creating a comprehensive
+			test suite in Cucumber which closely followed the Rewards Team's first requirements document. Underlying
+			testing code was always simulating the designated client for feature under test, up to mimicking the requests
+			from Rewards front-end page when used by a customer.
+		</p><p>
+			Cucumber scripts covered both journey and feature approach, since, for most of the subsystems under test, they
+			were either inapplicable or missing. In both cases, no system owned by the company was stubbed, resulting in
+			the first ever integration tests of multiple systems of CtM. Thus, SIT run results and diagnostic logs were the main
+			way to address the numerous cross-team integration issues normally solved with Pact - however, due to removing it
+			from developers orbit of day-to-day interest, SIT could only help with resolving issues that already happened, as
+			opposed to Pact's capability to anticipate them.
+		</p><p>
+			Refusal to stub <i>anything CtM owns</i> additionally resulted in high volumes of cross-team
+			communications facilitated by Testing Function and low-level managers, since - in several cases - attempts
+		        to run set-up code allowed us to detect external code entirely incompatible with fundamental
+			assumptions of the Rewards project.
+		</p><p>
+			Finally, decision to use disposable customer accounts and peculiarities of CtM's customer profile systems
+			resulted in cranking parallelisation up to 11, where Cucumber.js allows running every feature file in parallel,
+			while the needs of SIT demanded parallel run of every test case with slight staggering to circumvent the
+			customer profile's throttling mechanism. Final test results were then aggregated into a Bootstrap-themed
+		        report.
+		</p>
+	</div>
+</div>
+
+<div class="careerstep">
+	<a name="prj-bigsmoke"></a>
 	<div class="stephdr">
 		<div class="years">
 			The Big Smoke
@@ -752,7 +802,7 @@ function generateTOC() {
 	<div class="description">
 		<p>
 			The project aimed to move Aframe services to professional SaaS/IaaS
-			approach, hopefully allowing fine-cutting of the offer for widely
+			approach, hopefully allowing to fine-cut our offer for widely
 			varying types of customers in video production market as well as increased
 			resilience against deployment issues, network failures and hardware
 			problems.
@@ -769,7 +819,8 @@ function generateTOC() {
 			IaaS control was to be provided by OpenStack with associated
 			products. Issues caused by OpenStack's immaturity (particularly
 			networking quirks) and Docker's limitations (one part of the
-			architecture required a container within a container) were never fully
+			architecture required a container within a container which made its way to Docker
+		        about a year later) were never fully
 			resolved throughout project's lifetime.
 		</p><p>
 			All machines involved were provisioned in fully automatic manner,
