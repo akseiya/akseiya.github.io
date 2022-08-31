@@ -80,7 +80,7 @@ TABLE.skills, DIV.careerstep {
 
 
 DIV.careerstep {
-    margin-bottom:    16px;
+    margin-bottom:    2em;
 }
 
 DIV.description {
@@ -148,7 +148,7 @@ DIV.minimenu {
 }
 
 DIV.careerstep DIV.stephdr, DIV.careerstep DIV.description {
-    padding: 4px;
+    padding: 0.5em;
 }
 
 DIV.description {
@@ -184,7 +184,7 @@ TD.photo, FIELDSET, TABLE.skills TH, TABLE.skills TD, DIV.careerstep {
     border: 1px solid;
 }
 
-/* CSS3 *//*
+/* CSS3 */
 
   DIV.careerstep {
     border-radius: 7px;
@@ -211,11 +211,6 @@ TABLE.skills TH, TABLE.skills TD {
 TABLE.skills TH, DIV.careerstep DIV.stephdr, .summary-header {
     background-color:    #ECF;
 }
-    
-.summary-header { 
-    font-weight: bold;
-    font-size: 1.15em 
-}
 
 TABLE.skills TR.head TD {
     background-color:    #879;
@@ -224,6 +219,13 @@ TABLE.skills TR.head TD {
 TR.head TD {
     color: white;
 }
+
+.summary-header {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+
 
 @media print {
     h1 {                page-break-before: always;}
@@ -234,29 +236,6 @@ TR.head TD {
 </style>
 
 <script>
-
-function colourMePretty() {
-    var result = '';
-    var skillsTable = document.getElementsByClassName('skills')[0].children[1];
-    for (var skillsTableIdx in skillsTable.children)
-    {
-        var skillRow = skillsTable.children[skillsTableIdx];
-        if ((skillRow.className == 'head') ||
-            (!skillRow.children) ||
-            (skillRow.children.length < 4)) continue;
-        var skillLevel = skillRow.children[2].innerText;
-        var colour = 'white';
-        switch (skillLevel)
-        {
-            case "medium":     colour = "#EFE"; break;
-            case "medium/high":
-            case "high":    colour = "#EEF"; break;
-            case "expert":     colour = "#FEF"; break;
-            case "master":    colour = "#FFE"; break;
-        }
-        skillRow.style.backgroundColor = colour;
-    }
-}
 
 function linkFromHeader(header) {
     var link = header.innerText;
@@ -316,15 +295,9 @@ function generateTOC() {
                 <!-- ======== KĄPETĘCYJE ======== -->
 
 <div class="careerstep">
-    <div class="stephdr">
-        <div class="years">
+    <div class="stephdr summary-header">
             <a name="competences"></a>
             Areas of competence
-        </div><div class="position">
-            &nbsp;
-        </div><div>
-            &nbsp;
-        </div>
     </div>
     <div class="description">
     <ul>
@@ -337,14 +310,8 @@ function generateTOC() {
 </div>
 
 <div class="careerstep">
-    <div class="stephdr">
-        <div class="years">
-            Business applications
-        </div><div class="position">
-            &nbsp;
-        </div><div>
-            &nbsp;
-        </div>
+    <div class="stephdr summary-header">
+        Business applications
     </div>
     <div class="description">
     <h2>Social media and education</h2>
@@ -414,7 +381,7 @@ function generateTOC() {
     </li><li>    Mainframe tools (TSO/ISPF/SDSF, Control-M, CICS, Serena, Xpediter)
     </li><li>    Sequel and DataMapper, Oracle procs, DB2 with tooling
     <!--
-    </li><li>    
+    </li><li>
 -->
     </li></ul>
 </li></ul>
@@ -593,7 +560,7 @@ function generateTOC() {
             BDD evangelism.
         </li><li>
             Line management of the permanent employees, occasional intervention in the matters concering the remote contractors.
-        </li><li>            
+        </li><li>
             Spikes, code reviews, code sketches. Pair programming, mentoring, letting people actually get on with their jobs.
         </li><li>
             Planning and designing new testing regimes and processes in collaboration with others leaders of tech of product.
@@ -622,8 +589,8 @@ function generateTOC() {
         </li><li>
             Spiking use of Pact.js as a contract testing as part of my work for the Testing Function in CtM.
         </li><li>
-            Dogged insistence on keeping some basic principles of software development with agility. 
-        </li><li>            
+            Dogged insistence on keeping some basic principles of software development with agility.
+        </li><li>
             Preaching BDD to anyone and everyone.
         </li><li>
             Calling the 3 Amigos sessions and playing the role of product owner, business analyst
