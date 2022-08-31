@@ -22,7 +22,7 @@
 /* formatting */
 
 BODY {
-    background-color: #FCEAFF;
+    background-color: #FAF7FA;
     padding:          0;
     margin:           0;
 }
@@ -66,7 +66,7 @@ TABLE.headtable TH {
 
 H1, H2 {font-weight:  bold;}
 H1 {
-    font-size:  18px;
+    font-size:  2em;
     width:      100%;
     text-align: center;
     margin:     1.5em auto;
@@ -212,7 +212,10 @@ TABLE.skills TH, DIV.careerstep DIV.stephdr, .summary-header {
     background-color:    #ECF;
 }
     
-.summary-header { font: bold 1.5em }
+.summary-header { 
+    font-weight: bold;
+    font-size: 1.15em 
+}
 
 TABLE.skills TR.head TD {
     background-color:    #879;
@@ -230,7 +233,7 @@ TR.head TD {
 
 </style>
 
-<script><!--
+<script>
 
 function colourMePretty() {
     var result = '';
@@ -269,7 +272,7 @@ function generateTOC() {
                 map(linkFromHeader).join(' | ')
 }
 
-//--></script>
+</script>
 
 </head>
 
@@ -379,6 +382,126 @@ function generateTOC() {
     </ul>
     </div>
 </div>
+
+<h1><a name="main-tech"></a>Technologies</h1>
+
+<ul><li>
+    <h4>Fresh and sharp</h4>
+    <ul><li>     Cucumber in many flavours and implementations
+    </li><li>    Python, Node.js and Ruby without Rails
+    </li><li>    gitLab CI/CD (in-depth)
+    </li><li>    Dockerfiles, helm templates, kubectl
+    </li><li>    POSIX (admin/scriptmaster) and Windows (power user who enables WSL anyway)
+    </li><li>    REST with its cousins and friends (openAPI, RAML)
+    </li><li>    The Web (HTML, CSS, JS, HAML, JQ, Marionette tricks etc)
+    </li><li>    webdrivers and add-ons (webdriver.io, Capybara, site Prism, pure Selenium)
+    </li><li>    pure SQL, postgres
+<!--
+    </li><li>
+-->
+    </li></ul>
+</li><li>
+    <h4>A day's refresher will do it</h4>
+    <ul><li>    `git rebase`s from hell
+    </li><li>    Bamboo, Jenkins, Go Pipelines
+    </li><li>    Browserstack and Saucelabs
+    </li><li>    Express.js, Sinatra, Grape
+    </li><li>    Rake, make, NPM runscripts and configs
+    </li></ul>
+</li><li>
+    <h4>Would require a week or two to use daily again</h4>
+    <ul><li>    COBOL, JCL, PHP, C++, Visual Basic, Java
+    </li><li>    Mainframe tools (TSO/ISPF/SDSF, Control-M, CICS, Serena, Xpediter)
+    </li><li>    Sequel and DataMapper, Oracle procs, DB2 with tooling
+    <!--
+    </li><li>    
+-->
+    </li></ul>
+</li></ul>
+
+<!--table class="skills">
+
+<col class="subject"/>
+<col class="years"/>
+<col class="level"/>
+<col class="lastused"/>
+
+<tr class="head">
+    <td>Subject                </td>
+    <td>Years of experience    </td>
+    <td>Level                </td>
+    <td>Last used            </td>
+</tr>
+
+<tr><th colspan="4">Programming        </th></tr>
+
+<tr><td>    JavaScript (up to ES7)        </td><td>13           </td><td>expert         </td><td>currently    </td></tr>
+<tr><td>    Ruby                </td><td>4           </td><td>expert         </td><td>currently    </td></tr>
+<tr><td>    Python 3            </td><td>2           </td><td>expert         </td><td>2012        </td></tr>
+<tr><td>     PHP                 </td><td>5           </td><td>high             </td><td>2010          </td></tr>
+<tr><td>    COBOL                 </td><td>3           </td><td>master         </td><td>2007        </td></tr>
+<tr><td>    C/C++                 </td><td>8           </td><td>medium         </td><td>2003          </td></tr>
+<tr><td>    Java                  </td><td>~1        </td><td>beginner        </td><td>2016         </td></tr>
+
+<tr><th colspan="4">Frameworks                   </th></tr>
+
+<tr><td>     Node.js             </td><td> 1     </td><td>medium/high         </td><td>2018         </td></tr>
+<tr><td>     Rails                 </td><td>&lt;1     </td><td>medium         </td><td>2016         </td></tr>
+<tr><td>     Sinatra             </td><td>3         </td><td>medium/high     </td><td>2016         </td></tr>
+<tr><td>     Grape                 </td><td>~1     </td><td>medium         </td><td>2014         </td></tr>
+<tr><td>     Sequel                 </td><td>~1     </td><td>medium/high    </td><td>2014         </td></tr>
+<tr><td>     DataMapper            </td><td>~1     </td><td>medium            </td><td>2014         </td></tr>
+
+<tr><th colspan="4">Web front-end</th></tr>
+
+<tr><td>    HTML < 5            </td><td>13     </td><td>expert            </td><td>currently     </td></tr>
+<tr><td>     CSS                 </td><td>11     </td><td>high             </td><td>currently     </td></tr>
+<tr><td>    HAML                </td><td>1     </td><td>medium/high    </td><td>currently    </td></tr>
+<tr><td>     jQuery                 </td><td>2     </td><td>medium/high         </td><td>currently     </td></tr>
+
+<tr><th colspan="4">Databases</th></tr>
+
+<tr><td>    SQL - generic        </td><td>11        </td><td>expert            </td><td>2010          </td></tr>
+<tr><td>    postgreSQL             </td><td>5         </td><td>medium/high    </td><td>currently    </td></tr>
+<tr><td>     mySQL                 </td><td>7         </td><td>expert            </td><td>2010          </td></tr>
+<tr><td>    Oracle                 </td><td>2         </td><td>beginner        </td><td>2010         </td></tr>
+<tr><td>     DB2                 </td><td>3         </td><td>expert            </td><td>2007         </td></tr>
+
+<tr><th colspan="4">Scripting                    </th></tr>
+
+<tr><td>    Rake                </td><td>4           </td><td>expert         </td><td>currently    </td></tr>
+<tr><td>    Linux shell tools    </td><td>13          </td><td>expert         </td><td>currently    </td></tr>
+<tr><td>    JCL                 </td><td>3           </td><td>expert         </td><td>2007        </td></tr>
+<tr><td>    ICETOOL                </td><td>3           </td><td>expert         </td><td>2007        </td></tr>
+<tr><td>    procedural SQL        </td><td>3           </td><td>expert         </td><td>2007        </td></tr>
+<tr><td>    Visual Basic         </td><td>1           </td><td>medium         </td><td>2010        </td></tr>
+
+<tr><th colspan="4">Operating systems            </th></tr>
+
+<tr><td>     Linux/*nix/MacOS    </td><td>19     </td><td>expert         </td><td>currently     </td></tr>
+<tr><td>     MS Windows            </td><td>22     </td><td>expert         </td><td>currently     </td></tr>
+<tr><td>    z/OS                 </td><td>3         </td><td>medium         </td><td>2007        </td></tr>
+
+<tr><th colspan="4">Tools                            </th></tr>
+
+<tr><td>    Bamboo                </td><td>~1     </td><td>medium            </td><td>2016        </td></tr>
+<tr><td>    Git &amp; gitHub    </td><td>5         </td><td>expert              </td><td>currently    </td></tr>
+<tr><td>    RSpec                </td><td>5         </td><td>expert              </td><td>currently    </td></tr>
+<tr><td>    Chef &amp; Knife    </td><td>~1     </td><td>medium            </td><td>2015        </td></tr>
+<tr><td>    Jenkins                </td><td>~1     </td><td>beginner        </td><td>2015        </td></tr>
+<tr><td>    HP Quality Center    </td><td>2         </td><td>expert              </td><td>2010         </td></tr>
+<tr><td>    Lotus Notes            </td><td>2         </td><td>medium          </td><td>2010          </td></tr>
+<tr><td>    CICS                 </td><td>3         </td><td>medium/high     </td><td>2007        </td></tr>
+<tr><td>     TSO/ISPF/SDSF        </td><td>3         </td><td>high             </td><td>2007         </td></tr>
+<tr><td>     ChangeMan             </td><td>3         </td><td>high             </td><td>2007         </td></tr>
+<tr><td>     Xpediter             </td><td>3         </td><td>medium/high     </td><td>2007         </td></tr>
+<tr><td>    Control-M             </td><td>3         </td><td>high             </td><td>2007         </td></tr>
+<tr><td>    MicroFocus Revolve     </td><td>3         </td><td>high             </td><td>2007         </td></tr>
+<tr><td>    Rational ClearQuest    </td><td>3         </td><td>medium         </td><td>2007         </td></tr>
+
+</table>
+
+<script>colourMePretty();</script-->
 
 
 
@@ -1195,126 +1318,6 @@ function generateTOC() {
     </div>
 </div>
 <a name="projectsend"></a>
-
-<h1><a name="main-tech"></a>Technologies</h1>
-
-<ul><li>
-    <h4>Fresh and sharp</h4>
-    <ul><li>    Cucumber in many flavours and implementations
-    </li><li>    Python, Node.js (Express etc)  and Ruby without Rails
-    </li><li>    gitLab CI/CD (in-depth)
-    </li><li>    Dockerfiles, helm templates, kubectl
-    </li><li>    POSIX (admin/scriptmaster) and Windows (power user who enables WSL anyway)
-    </li><li>    REST with its cousins and friends (openAPI, RAML)
-    </li><li>    The Web (HTML, CSS, JS, HAML, JQ, Marionette tricks etc)
-    </li><li>    webdrivers and add-ons (webdriver.io, Capybara, site Prism, pure Selenium)
-    </li><li>    pure SQL, postgres
-<!--
-    </li><li>
--->
-    </li></ul>
-</li><li>
-    <h4>A day's refresher will do it</h4>
-    <ul><li>    `git rebase`s from hell
-    </li><li>    Bamboo, Jenkins, Go Pipelines
-    </li><li>    Browserstack and Saucelabs
-    </li><li>    Express.js, Sinatra, Grape
-    </li><li>    Rake, make, NPM runscripts and configs
-    </li></ul>
-</li><li>
-    <h4>Would require a week or two to use daily again</h4>
-    <ul><li>    COBOL, JCL, PHP, C++, Visual Basic, Java
-    </li><li>    Mainframe tools (TSO/ISPF/SDSF, Control-M, CICS, Serena, Xpediter)
-    </li><li>    Sequel and DataMapper, Oracle procs, DB2 with tooling
-    <!--
-    </li><li>    
--->
-    </li></ul>
-</li></ul>
-
-<!--table class="skills">
-
-<col class="subject"/>
-<col class="years"/>
-<col class="level"/>
-<col class="lastused"/>
-
-<tr class="head">
-    <td>Subject                </td>
-    <td>Years of experience    </td>
-    <td>Level                </td>
-    <td>Last used            </td>
-</tr>
-
-<tr><th colspan="4">Programming        </th></tr>
-
-<tr><td>    JavaScript (up to ES7)        </td><td>13           </td><td>expert         </td><td>currently    </td></tr>
-<tr><td>    Ruby                </td><td>4           </td><td>expert         </td><td>currently    </td></tr>
-<tr><td>    Python 3            </td><td>2           </td><td>expert         </td><td>2012        </td></tr>
-<tr><td>     PHP                 </td><td>5           </td><td>high             </td><td>2010          </td></tr>
-<tr><td>    COBOL                 </td><td>3           </td><td>master         </td><td>2007        </td></tr>
-<tr><td>    C/C++                 </td><td>8           </td><td>medium         </td><td>2003          </td></tr>
-<tr><td>    Java                  </td><td>~1        </td><td>beginner        </td><td>2016         </td></tr>
-
-<tr><th colspan="4">Frameworks                   </th></tr>
-
-<tr><td>     Node.js             </td><td> 1     </td><td>medium/high         </td><td>2018         </td></tr>
-<tr><td>     Rails                 </td><td>&lt;1     </td><td>medium         </td><td>2016         </td></tr>
-<tr><td>     Sinatra             </td><td>3         </td><td>medium/high     </td><td>2016         </td></tr>
-<tr><td>     Grape                 </td><td>~1     </td><td>medium         </td><td>2014         </td></tr>
-<tr><td>     Sequel                 </td><td>~1     </td><td>medium/high    </td><td>2014         </td></tr>
-<tr><td>     DataMapper            </td><td>~1     </td><td>medium            </td><td>2014         </td></tr>
-
-<tr><th colspan="4">Web front-end</th></tr>
-
-<tr><td>    HTML < 5            </td><td>13     </td><td>expert            </td><td>currently     </td></tr>
-<tr><td>     CSS                 </td><td>11     </td><td>high             </td><td>currently     </td></tr>
-<tr><td>    HAML                </td><td>1     </td><td>medium/high    </td><td>currently    </td></tr>
-<tr><td>     jQuery                 </td><td>2     </td><td>medium/high         </td><td>currently     </td></tr>
-
-<tr><th colspan="4">Databases</th></tr>
-
-<tr><td>    SQL - generic        </td><td>11        </td><td>expert            </td><td>2010          </td></tr>
-<tr><td>    postgreSQL             </td><td>5         </td><td>medium/high    </td><td>currently    </td></tr>
-<tr><td>     mySQL                 </td><td>7         </td><td>expert            </td><td>2010          </td></tr>
-<tr><td>    Oracle                 </td><td>2         </td><td>beginner        </td><td>2010         </td></tr>
-<tr><td>     DB2                 </td><td>3         </td><td>expert            </td><td>2007         </td></tr>
-
-<tr><th colspan="4">Scripting                    </th></tr>
-
-<tr><td>    Rake                </td><td>4           </td><td>expert         </td><td>currently    </td></tr>
-<tr><td>    Linux shell tools    </td><td>13          </td><td>expert         </td><td>currently    </td></tr>
-<tr><td>    JCL                 </td><td>3           </td><td>expert         </td><td>2007        </td></tr>
-<tr><td>    ICETOOL                </td><td>3           </td><td>expert         </td><td>2007        </td></tr>
-<tr><td>    procedural SQL        </td><td>3           </td><td>expert         </td><td>2007        </td></tr>
-<tr><td>    Visual Basic         </td><td>1           </td><td>medium         </td><td>2010        </td></tr>
-
-<tr><th colspan="4">Operating systems            </th></tr>
-
-<tr><td>     Linux/*nix/MacOS    </td><td>19     </td><td>expert         </td><td>currently     </td></tr>
-<tr><td>     MS Windows            </td><td>22     </td><td>expert         </td><td>currently     </td></tr>
-<tr><td>    z/OS                 </td><td>3         </td><td>medium         </td><td>2007        </td></tr>
-
-<tr><th colspan="4">Tools                            </th></tr>
-
-<tr><td>    Bamboo                </td><td>~1     </td><td>medium            </td><td>2016        </td></tr>
-<tr><td>    Git &amp; gitHub    </td><td>5         </td><td>expert              </td><td>currently    </td></tr>
-<tr><td>    RSpec                </td><td>5         </td><td>expert              </td><td>currently    </td></tr>
-<tr><td>    Chef &amp; Knife    </td><td>~1     </td><td>medium            </td><td>2015        </td></tr>
-<tr><td>    Jenkins                </td><td>~1     </td><td>beginner        </td><td>2015        </td></tr>
-<tr><td>    HP Quality Center    </td><td>2         </td><td>expert              </td><td>2010         </td></tr>
-<tr><td>    Lotus Notes            </td><td>2         </td><td>medium          </td><td>2010          </td></tr>
-<tr><td>    CICS                 </td><td>3         </td><td>medium/high     </td><td>2007        </td></tr>
-<tr><td>     TSO/ISPF/SDSF        </td><td>3         </td><td>high             </td><td>2007         </td></tr>
-<tr><td>     ChangeMan             </td><td>3         </td><td>high             </td><td>2007         </td></tr>
-<tr><td>     Xpediter             </td><td>3         </td><td>medium/high     </td><td>2007         </td></tr>
-<tr><td>    Control-M             </td><td>3         </td><td>high             </td><td>2007         </td></tr>
-<tr><td>    MicroFocus Revolve     </td><td>3         </td><td>high             </td><td>2007         </td></tr>
-<tr><td>    Rational ClearQuest    </td><td>3         </td><td>medium         </td><td>2007         </td></tr>
-
-</table>
-
-<script>colourMePretty();</script-->
 
                 <!-- ======== MOJE PARANOJE ======== -->
 
