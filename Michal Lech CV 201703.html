@@ -404,19 +404,18 @@ function generateTOC() {
         </div>
     </div>
     <div class="description">
-        <h2>Duties/works</h2>
+        <h2>Stuff done</h2>
         <ul><li>
             Retiring a contraption based on Robot Framework (a perfect silo) and replacing it with
             a squad-maintained CCIT suite. This was my nominal job and I finished it in a few sprints
             (not any faster as the new suite had to be in Java).
         </li><li>
-            Maintaining and developing the devops side: deployment scripts (k8s), Helm charts and
-            gitLab CI/CD workflows.
+            The devops side: deployment scripts (k8s), Helm charts and gitLab CI/CD workflows.
         </li><li>
-            Creating yet another page-Object'y E2E testing framework,
-            this time enhanced with abstractions for shared practices of Athena project
-            (Hashicorp Vault authentication, JSON API-s, domains and service naming used
-            by the internal K8s clusters). In Python.
+            Creating a well received E2E testing framework in Python, where all Athena project conventions
+            (regarding k8s clusters, Hashicorp Vault secrets and managing JSON API-s) were encapsulated
+            so that all boilerplate for a new API could be specified with its name and the name
+            of squad that owned it (while rebels and legacy code required merciful amounts of extra code)
         </li><li>
             Creating, reshaping and maintaining auxiliary tools (standalone mocks, proxies etc).
         </li><li>
